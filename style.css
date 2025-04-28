@@ -115,18 +115,37 @@ body {
    👤 ABOUT ME SECTION
 ---------------------------------------- */
 .about-section {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.about-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 6rem 2rem;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
   flex-wrap: nowrap;
-  max-width: 1200px; /* ✨ Limit width */
-  margin: auto; /* ✨ Center the container */
 }
 
-.about-section .profile-img {
+.intro-text {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.profile-img {
   flex: 0 0 40%;
   display: flex;
   justify-content: center;
@@ -141,13 +160,24 @@ body {
   border: none;
 }
 
-.about-section .intro-text {
-  flex: 1;
-  max-width: 600px;
-  text-align: left;
-  color: #ffffff;
-  padding: 1rem;
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text,
+  .profile-img {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .profile-img img {
+    max-width: 250px;
+  }
 }
+
 
 .about-section p {
   color: #ffffff;
@@ -168,24 +198,7 @@ body {
   background: #ccc;
 }
 
-/* 📱 Mobile Responsive */
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-  }
 
-  .about-section .profile-img,
-  .about-section .intro-text {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-  
-  .profile-img img {
-    max-width: 250px;
-  }
-}
 
 /* ----------------------------------------
    🧠 SECTION GENERAL STYLES
