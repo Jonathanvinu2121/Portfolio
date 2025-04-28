@@ -116,18 +116,20 @@ body {
 ---------------------------------------- */
 .about-section {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   padding: 6rem 2rem;
   flex-wrap: nowrap;
+  max-width: 1200px; /* ✨ Limit width */
+  margin: auto; /* ✨ Center the container */
 }
 
 .about-section .profile-img {
-  flex: 1;
+  flex: 0 0 40%;
   display: flex;
   justify-content: center;
-  margin: 0; /* ✨ REMOVE old margin-left */
 }
 
 .profile-img img {
@@ -136,6 +138,7 @@ body {
   border-radius: 50% / 45%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  border: none;
 }
 
 .about-section .intro-text {
@@ -144,44 +147,18 @@ body {
   text-align: left;
   color: #ffffff;
   padding: 1rem;
-  margin: 0; /* ✨ REMOVE old margin-left and margin-top */
 }
 
-/* 📱 Mobile responsive */
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-section .intro-text {
-    text-align: center;
-  }
+.about-section p {
+  color: #ffffff;
 }
-
-
-.about-section p{
-  color:#ffffff;
-}
-
-.profile-img img { 
-  width: 280px;
-  height: 340px; /* Slightly taller = oval */
-  border-radius: 50% / 45%; /* Makes it slightly oval */
-  object-fit: cover;
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Softer shadow */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-  border: none;
-  
-}
-
 
 .download-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1.25rem;
   background: white;
-  text-decoration: none; 
+  text-decoration: none;
   color: black;
   font-weight: 600;
   border-radius: 999px;
@@ -189,6 +166,25 @@ body {
 
 .download-btn:hover {
   background: #ccc;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .about-section .profile-img,
+  .about-section .intro-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .profile-img img {
+    max-width: 250px;
+  }
 }
 
 /* ----------------------------------------
