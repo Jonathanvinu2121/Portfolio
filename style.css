@@ -116,11 +116,28 @@ body {
 ---------------------------------------- */
 .about-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem 3rem 3rem;
-  gap: 4rem;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 6rem 2rem;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .intro-text {
+    padding-top: 1rem;
+  }
 }
 
 .about-section .profile-img {
