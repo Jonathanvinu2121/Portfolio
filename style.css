@@ -119,54 +119,42 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
-  padding: 6rem 2rem;
-}
-
-/* Responsive layout for mobile */
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-img img {
-    width: 250px;
-    height: 300px;
-  }
-
-  .intro-text {
-    padding-top: 1rem;
-  }
+  gap: 2rem;
+  padding: 4rem 2rem;
 }
 
 .about-section .profile-img {
   flex: 1;
+  min-width: 250px;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.profile-img img {
+  width: 280px;
+  height: 340px;
+  border-radius: 50% / 45%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .about-section .intro-text {
   flex: 1;
+  min-width: 300px;
   max-width: 600px;
   text-align: left;
+  color: #fff;
   padding: 1rem;
 }
 
+/* Mobile screen */
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-section .profile-img {
-    margin-left: 0;
-  }
-
   .about-section .intro-text {
-    margin: 0;
-    padding-top: 1rem;
     text-align: center;
   }
 }
