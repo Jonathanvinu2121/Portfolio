@@ -116,18 +116,18 @@ body {
 ---------------------------------------- */
 .about-section {
   display: flex;
-  flex-direction: row; /* Row by default (desktop) */
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 6rem 2rem;
-  flex-wrap: nowrap; /* Force side-by-side */
+  flex-wrap: nowrap;
 }
 
 .about-section .profile-img {
-  flex: 0 0 40%; /* 40% width fixed for image */
+  flex: 1;
   display: flex;
   justify-content: center;
+  margin: 0; /* ✨ REMOVE old margin-left */
 }
 
 .profile-img img {
@@ -144,19 +144,17 @@ body {
   text-align: left;
   color: #ffffff;
   padding: 1rem;
+  margin: 0; /* ✨ REMOVE old margin-left and margin-top */
 }
 
-/* Mobile Responsive */
+/* 📱 Mobile responsive */
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column;
     text-align: center;
-    flex-wrap: wrap;
   }
 
-  .about-section .profile-img,
   .about-section .intro-text {
-    flex: 1 1 100%;
     text-align: center;
   }
 }
