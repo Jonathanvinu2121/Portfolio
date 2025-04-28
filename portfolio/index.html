@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jonathan T. Vinu's portfolio showcasing projects, skills, and achievements in Data Science, AI, and Machine Learning.">
+    <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Jonathan T. Vinu | Data Scientist Portfolio" />
+<meta property="og:description" content="Explore Jonathan's portfolio featuring AI, ML, and Data Science projects." />
+<meta property="og:image" content="https://your-domain.com/assets/profile.jpg" />
+<meta property="og:url" content="https://your-domain.com/" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Jonathan T. Vinu | Data Scientist Portfolio" />
+<meta name="twitter:description" content="Explore Jonathan's portfolio showcasing AI, ML, and Data Science projects." />
+<meta name="twitter:image" content="https://your-domain.com/assets/profile.jpg" />
+
+    <title>JTV| Portfolio</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <div class="logo-box">
+      <div class="logo">JV</div>
+    </div>
+    <nav id ="navbar" class="floating-navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href ="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+    <nav class="relative">
+        <div class="absolute top-8 right-0 flex gap-6 text-4xl">
+          <a href="https://www.linkedin.com/in/jonathan-t-vinu-aab099251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="2em" width="2em">
+              <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+            </svg>
+          </a>
+          <a href="https://github.com/Jonathanvinu2121" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="2em" width="2em">
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      
+      <section id="about" class="about-section section fade-in">
+        <h1 class="section-title">About Me</h1>
+        <div class="profile-img">
+          <img src="assets/2-removebg-preview2.png" alt="Jonathan T Vinu" />
+        </div>
+        <div class="intro-text">
+          <h2>Jonathan T Vinu</h2>
+          <h2>DATA SCIENTIST</h2>
+          <p>
+              I am an aspiring Data Scientist currently pursuing my degree in Computer Science, 
+              with a strong passion for data-driven technologies and intelligent systems. 
+              I have hands-on experience in supervised and unsupervised learning, deep learning, and natural language processing.
+              My skill set includes working with algorithms like regression, classification, clustering, decision trees, and neural networks, 
+              along with advanced models such as LSTM and transformer-based architectures including Large Language Models (LLMs). 
+              I am proficient in <strong>Python</strong>, <strong>R</strong>, <strong>SQL</strong>, <strong>Pandas</strong>, <strong>NumPy</strong>, <strong>Scikit-learn</strong>, <strong>TensorFlow</strong>, and <strong>Keras</strong>, 
+              and I use visualization tools like <strong>Matplotlib</strong>, <strong>Seaborn</strong>, and <strong>Plotly</strong> to communicate insights effectively. 
+              I'm continually working on real-world projects to apply these techniques and build innovative, scalable solutions that solve complex problems and 
+              create measurable impact.
+            </p>
+            <a href="assets/specific.pdf" class="download-btn" download>Download CV</a>
+          </div>
+        </section>
+
+      <!-- Technologies Section -->
+      <section id="skills" class="skills-section fade-in">
+        <h2 class="section-title">Technologies</h2>
+        <div class="skills-grid no-box">
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+            <p>TensorFlow</p>
+          </div>
+          <!-- <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+            <p>Pandas</p>
+          </div> -->
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" />
+            <p>PyTorch</p>
+          </div>
+          <div class="skill-item">
+            <img src="/assets/tableau-icon-svgrepo-com.svg" alt="Tableau">
+            <p>Tableau</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Spark">
+            <p>Apache Spark</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop">
+            <p>Hadoop</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+            <p>Amazon Web Services</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <p>Git</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Experience Section -->
+      <section id="experience" class="experience section fade-in">
+        <h2 class="section-title">EXPERIENCE</h2>
+      
+        <div class="experience-item">
+          <!-- Left: Timeline (Date/Duration) -->
+          <div class="timeline">
+            <div class="date">Jan 2023 - Present</div>
+          </div>
+          
+          <!-- Right: Content (Job Title, Description, Skills) -->
+          <div class="experience-content">
+            <h3 class="job-title">Freelancer Data Scientist -  
+              <span class="company-name">Fiverr & Upwork</span>
+            </h3>
+            <p class="job-description">
+              Built intelligent data-driven solutions for a variety of freelance clients worldwide. <br>Delivered data visualizations, machine learning models, and predictive insights tailored to business needs.
+            </p>
+          </div>
+        </div>
+      
+        <div class="experience-item">
+          <div class="timeline">
+            <div class="date">Dec 2024 - Feb 2025</div>
+          </div>
+          <div class="experience-content">
+            <h3 class="job-title">Freelance AI Contributor -
+              <span class="company-name">Outlier AI</span>
+            </h3>
+            <p class="job-description">
+            Trained AI models to detect patterns and improve prediction accuracy.<br>
+Reviewed AI-generated outputs for contextual accuracy and relevance.<br>Moderated and curated datasets to ensure quality, consistency, and integrity for AI training.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Projects Section -->
+      <section id="projects" class="section fade-in">
+        <h2 class="section-title">PROJECTS</h2>
+        
+          <!-- Project 1 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="/assets/pi1.png" alt="AI Irrigation Predictor" />
+            </div>
+            <div class="project-content">
+              <h3>AI-Enhanced Smart Irrigation Predictor</h3>
+              <p>
+                Developed an AI system combining CNN and LSTM for real-time irrigation predictions. Processed IoT & satellite data, achieving 88% accuracy. Visualized insights via a Tableau dashboard.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>TensorFlow</span>
+                <span>Tableau</span>
+                <span>HDFS</span>
+                <span>LSTM</span>
+                <span>CNN</span>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 2 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="/assets/pic2.webp" alt="Fitness Planner" />
+            </div>
+            <div class="project-content">
+              <h3>Genetic Algorithm-Based Fitness & Nutrition Planner</h3>
+              <p>
+                Built a fitness planner using Genetic Algorithms to optimize plans based on user data. Improved personalization by 30% and visualized progress through Tableau.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>NumPy</span>
+                <span>PyGAD</span>
+                <span>Tableau</span>
+                <span>HDFS</span>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 3 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="/assets/idw.jpeg" alt="Customer Churn Prediction" />
+            </div>
+            <div class="project-content">
+              <h3>Customer Churn Prediction</h3>
+              <p>
+                Built ML models (Logistic Regression, Random Forest) to predict churn with 89% accuracy. Cleaned 5,000+ records and visualized churn factors via Tableau.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>Tableau</span>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Project 4 -->
+          <div class="project-card fade-in">
+            <div class="project-img">
+              <img src="/assets/pi3.jpg" alt="Smart Agriculture" />
+            </div>
+            <div class="project-content">
+              <h3>Smart Agriculture System</h3>
+              <p>
+                Developed an AI-powered system that recommends crops based on weather, soil, and fertilizer data. Built a real-time UI using Streamlit and achieved ~85% prediction accuracy.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>LLMs</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+      <!-- Certifications Section -->
+      <section id="certifications" class="section fade-in">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+        <div class="certification-list">
+          <!-- Certificate 1 -->
+          <div class="cert-item" onclick="openModal('assets/s1.png')">
+            <img src="assets/cloud.png" alt="Cloud Computing Certification">
+            <span>Cloud Computing</span>
+          </div>
+      
+          <!-- Certificate 2 -->
+          <div class="cert-item" onclick="openModal('assets/ai.png')">
+            <img src="assets/ai.png" alt="AI & Machine Learning Certification">
+            <span>AI & Machine Learning</span>
+          </div>
+
+          <div class="cert-item" onclick="openModal('assets/super.png')">
+            <img src="assets/super.png" alt="Supervised Learning">
+            <span>Supervised Learning</span>
+          </div>
+          <div class="cert-item" onclick="openModal('assets/dsa.png')">
+            <img src="assets/dsa.png" alt="DSA">
+            <span> Data Structures and Algorithms in CPP</span>
+          </div>
+          <div class="cert-item" onclick="openModal('assets/r.png')">
+            <img src="assets/r.png" alt="Supervised Learning">
+            <span>R Programing</span>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Modal Popup Structure -->
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+      
+      
+      
+      
+      
+      <!-- Achievements Section -->
+      <section id="achievements" class="section fade-in">
+        <h2 class="section-title">ACHIEVEMENTS</h2>
+        <div class="content-block">
+          <div class="item">
+            <h3>Organized National-Level Tech Events <span class="date">Sep 2024</span></h3>
+            <p>Successfully hosted events with 1,000+ attendees at Lovely Professional University, showcasing strong leadership and event management skills.</p>
+          </div>
+          
+          <div class="item">
+            <h3>Listening Comprehension Winner <span class="date">April 2023</span></h3>
+            <p>Secured 1st place out of 200 participants in the Listening Comprehension Test, demonstrating exceptional auditory and analytical skills.</p>
+          </div>
+          
+          <div class="item">
+            <h3>Smart India Hackathon Finalist <span class="date">Aug 2023</span></h3>
+            <p>Reached the finals of Smart India Hackathon 2023 for an innovative tech solution addressing real-world challenges.</p>
+          </div>
+          
+          <div class="item">
+            <h3>AI Project Showcase – Smart Irrigation Predictor <span class="date">Mar 2024</span></h3>
+            <p>Presented a real-time smart irrigation system integrating CNN for image classification and LSTM for rainfall forecasting.</p>
+            <p>Recognized for innovation and impact in AgriTech — aimed at improving water efficiency and crop health.</p>
+          </div>
+        </div>
+      </section>
+      
+      
+      <!-- Contact Section -->
+     <section id="contact" class="section contact">
+      <h2 class="section-heading">Contact Me</h2>
+      <form action="https://formsubmit.co/jonathanvinu2004@gmail.com" method="POST" class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      
+      <!-- Success Message -->
+      <div id="successMessage" class="hidden"> Your message has been sent!</div>
+      
+    </section>
+     <script src="script.js"></script>
+  </body>
+</html>
